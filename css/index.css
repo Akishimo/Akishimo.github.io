@@ -308,6 +308,13 @@ canvas:not(#ribbon-canvas),
   -ms-animation: scroll-down-effect 1.5s infinite;
   animation: scroll-down-effect 1.5s infinite;
 }
+.avatar-img {
+  -webkit-animation: avatar_turn_around 8s linear infinite;
+  -moz-animation: avatar_turn_around 8s linear infinite;
+  -o-animation: avatar_turn_around 8s linear infinite;
+  -ms-animation: avatar_turn_around 8s linear infinite;
+  animation: avatar_turn_around 8s linear infinite;
+}
 .reward-main {
   -webkit-animation: donate_effcet 0.3s 0.1s ease both;
   -moz-animation: donate_effcet 0.3s 0.1s ease both;
@@ -1525,6 +1532,10 @@ img:not([src]) {
 .ad-height {
   display: block !important;
   height: auto !important;
+}
+*::-webkit-scrollbar {
+  width: 0px;
+  height: opx;
 }
 figure.highlight table::-webkit-scrollbar-thumb {
   background: #dce4eb;
